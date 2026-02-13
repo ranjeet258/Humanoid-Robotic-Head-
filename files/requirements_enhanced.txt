@@ -1,0 +1,27 @@
+# Humanoid Robot Requirements - Enhanced Version
+
+# Core AI
+google-genai>=0.2.0
+
+# Speech Recognition
+SpeechRecognition>=3.10.0
+pyaudio>=0.2.14
+
+# Text-to-Speech
+gTTS>=2.5.0
+
+# Audio Playback
+pygame>=2.5.0
+
+# PCA9685 Servo Driver (16-channel)
+adafruit-circuitpython-servokit>=1.3.0
+adafruit-circuitpython-pca9685>=3.4.0
+adafruit-circuitpython-motor>=3.4.0
+
+# I2C Communication
+smbus2>=0.4.0
+
+# Optional: For advanced features
+# webrtcvad>=2.0.10  # Better voice activity detection
+# porcupine>=2.0.0   # Wake word detection
+# pvrecorder>=1.1.0  # Better audio recording
