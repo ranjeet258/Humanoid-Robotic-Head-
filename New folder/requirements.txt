@@ -1,0 +1,22 @@
+# Humanoid Robot Requirements
+
+# Core AI
+google-genai>=0.2.0
+
+# Speech Recognition
+SpeechRecognition>=3.10.0
+pyaudio>=0.2.14
+
+# Text-to-Speech
+gTTS>=2.5.0
+
+# Audio Playback
+pygame>=2.5.0
+
+# GPIO Control (Raspberry Pi)
+RPi.GPIO>=0.7.1
+
+# Optional: For advanced features
+# webrtcvad>=2.0.10  # Better voice activity detection
+# porcupine>=2.0.0   # Wake word detection
+# pvrecorder>=1.1.0  # Better audio recording
