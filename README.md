@@ -20,8 +20,7 @@ intelligence (Google Gemini 2.5 Flash) to achieve:
 
 ---
 ## System Architecture
-![System Architecture](system architecture.png)
-
+![System Architecture](system-architecture.png)
 ---
 
 ## Project Structure
