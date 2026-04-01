@@ -5,13 +5,17 @@
 **Institution:** National Institute of Technology, Jamshedpur
 
 ---
+## 3D Printed Robotic Head
+Material Used: ELEGOO Resin (Grey) But for best result use PLA++
+3D Printer Used: ELEGOO Saturn 
+![Robotic-Head](Images\3D Printed Robotic Head.png)
+
 
 ## Project Overview
 
 A standalone, cost-effective humanoid robotic head powered by multimodal AI.
 It combines on-device computer vision (YOLOv8-Nano) with cloud-based language
-intelligence (Google Gemini 2.5 Flash) to achieve:
-
+intelligence (Google Gemini 2.5 Flash or newer) to achieve:
 - Real-time person tracking via neck servo
 - Natural voice conversation with jaw-sync lip animation
 - Human-interrupt detection — robot stops mid-sentence when you speak
@@ -20,7 +24,7 @@ intelligence (Google Gemini 2.5 Flash) to achieve:
 
 ---
 ## System Architecture
-![System-Architecture](system-architecture.png)
+![System-Architecture](Images\system-architecture.png)
 ---
 
 ## Project Structure
@@ -61,40 +65,6 @@ humanoid_robot/
 | Logic power | 5 V / 3 A USB-C | — |
 | Servo power | 6 V external battery | PCA9685 V+ |
 
-### Wiring Summary
-
-```
-PCA9685  →  Raspberry Pi 5
-  VCC    →  5 V   (Pin 2 / 4)
-  GND    →  GND   (Pin 6)
-  SDA    →  GPIO 2  (Pin 3)
-  SCL    →  GPIO 3  (Pin 5)
-  V+     →  External 6 V battery (+)
-  GND    →  External 6 V battery (-)
-
-PCA9685 Channels:
-  CH 0   →  Jaw servo
-  CH 1   →  Neck servo  (left / right)
-  CH 2   →  Eye Up/Down servo
-  CH 3   →  Eye Left/Right servo
-
-I2S Microphone (INMP441):
-  VDD  → 3.3 V (Pin 1)
-  GND  → GND   (Pin 9)
-  SD   → GPIO 20 (PCM_DIN)
-  WS   → GPIO 19 (PCM_FS)
-  SCK  → GPIO 18 (PCM_CLK)
-  L/R  → GND (left channel)
-
-I2S Amplifier (MAX98357A):
-  VIN  → 5 V
-  GND  → GND
-  DIN  → GPIO 21 (PCM_DOUT)
-  BCLK → GPIO 18 (PCM_CLK)
-  LRC  → GPIO 19 (PCM_FS)
-```
-
----
 
 ## Installation
 
@@ -224,15 +194,6 @@ sudo systemctl start humanoid-robot    # start now
 sudo systemctl status humanoid-robot   # check status
 journalctl -u humanoid-robot -f        # live logs
 ```
-
----
-
-## Log File
-
-Logs are written to `/home/ranjeet/robot.log` and also printed to console.
-Change `Config.LOG_FILE = ""` to disable file logging.
-
----
 
 ## References
 
