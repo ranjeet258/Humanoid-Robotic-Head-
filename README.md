@@ -7,10 +7,11 @@
 ---
 ## 3D Printed Robotic Head
 Material Used: ELEGOO Resin (Grey) But for best result use PLA++
-3D Printer Used: ELEGOO Saturn 
-![Robotic-Head](Images\3D Printed Robotic Head.png)
+3D Printer Used: ELEGOO Saturn
 
+![Robotic-Head](Images/3D%20Printed%20Robotic%20Head.png)
 
+---
 ## Project Overview
 
 A standalone, cost-effective humanoid robotic head powered by multimodal AI.
@@ -24,7 +25,7 @@ intelligence (Google Gemini 2.5 Flash or newer) to achieve:
 
 ---
 ## System Architecture
-![System-Architecture](Images\system-architecture.png)
+![System-Architecture](Images/system-architecture.png)
 ---
 
 ## Project Structure
